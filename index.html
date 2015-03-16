@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <title>NFL Tweet Map</title>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <link rel="icon" type="logo" href="shield.png">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+
+    <div id="map-canvas"></div>
+    <div id="panel">
+      <img src="shield.png" alt="nfl">
+      <form name="address">
+        Pick Your Team:
+        <select name="result_type">
+          <option value="san francisco">49'ers</option>
+          <option value="chicago">Bears</option>
+          <option value="cincinnati">Bengals</option>
+          <option value="buffalo">Bills</option>
+          <option value="denver">Broncos</option>
+          <option value="cleveland">Browns</option>
+          <option value="tampa bay">Buccaneers</option>
+          <option value="arizona">Cardinals</option>
+          <option value="san diego">Chargers</option>
+          <option value="kansas city">Chiefs</option>
+          <option value="indionapolis">Colts</option>
+          <option value="dallas">Cowboys</option>
+          <option value="miami">Dolphins</option>
+          <option value="philadelphia">Eagles</option>
+          <option value="antlanta">Falcons</option>
+          <option value="new york">Giants</option>
+          <option value="gainsville">Jaguars</option>
+          <option value="new jersey">Jets</option>
+          <option value="detroit">Lions</option>
+          <option value="green bay">Packers</option>
+          <option value="north carolina">Panthers</option>
+          <option value="boston">Patriots</option>
+          <option value="oakland">Raiders</option>
+          <option value="st louis">Rams</option>
+          <option value="baltimore">Ravens</option>
+          <option value="washington">Redskins</option>
+          <option value="new orleans">Saints</option>
+          <option value="seattle">Seahawks</option>
+          <option value="pitsburg">Steelers</option>
+          <option value="houston">Texans</option>
+          <option value="tennessee">Titans</option>
+          <option value="minneonaolis">Vikings</option>
+        </select>
+
+      <input type="button" value="Team Buzz" name="Geocode">
+    </div>
+    <div id="tweetBox"></div>
+    
+    <div id="map-canvas"></div>
+    <script type="text/javascript" src="js/main.js"></script>
+  </body>
+</html>
